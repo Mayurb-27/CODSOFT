@@ -5,13 +5,13 @@
 int main() {
     int Num_Students;
 
-    std::cout << "Enter the number of students: ";
+    std::cout << "Enter the number of students: ";  //entering the number of students
     std::cin >> Num_Students;
 
     std::string Names[Num_Students];
     int Grades[Num_Students];
 
-    for (int i = 0; i < Num_Students; ++i) {
+    for (int i = 0; i < Num_Students; ++i) {  //collecting the data of students
         std::cout << "Enter student name: ";
         std::cin >> Names[i];
 
@@ -20,7 +20,7 @@ int main() {
     }
 
     int Total_Grades = 0.0;
-    for (int i = 0; i < Num_Students; ++i) {
+    for (int i = 0; i < Num_Students; ++i) {  //summing total grades of students
         Total_Grades += Grades[i];
     }
 
